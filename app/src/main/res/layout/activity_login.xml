@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Siptatif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="SIPTATIF"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Siptatif"
+        android:fontFamily="@font/open_sans_regular"
+        android:text="Sistem Informasi Pendaftaran Tugas Akhir Teknik Informatika"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/Selengkapnya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="30dp"
+        android:padding="5dp"
+        android:src="@drawable/information" />
+
+    <TextView
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="490dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:paddingBottom="15dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login"
+        android:layout_marginLeft="30dp"
+        android:padding="5dp"
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:src="@drawable/password" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="30dp">
+
+        <EditText
+            android:id="@+id/EmailUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:hint="email"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/EmailUser"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:hint="password"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:password="true"/>
+
+        <TextView
+            android:id="@+id/LupaPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Password"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/open_sans_bold"
+            android:paddingTop="5dp"
+            android:text="Lupa Password?"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/blue"
+        android:text="Login"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/Regis"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="Belum punya akun? Daftar disini"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+</RelativeLayout>

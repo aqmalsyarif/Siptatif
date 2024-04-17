@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dospem">
+
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CAC5C5"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="SIPTATIF"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/namaUser"
+            android:paddingRight="15dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/namaUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="Mahasiswa"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:text="Data Dosen Pembimbing"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:stretchColumns="1,2,3,4,5,6,7">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="No"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nama"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Nidn"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="lk/pr"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Keahlian"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="kuota"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_column="1"
+                    android:background="@drawable/model"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Aksi"
+                    android:textSize="12dp" />
+
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:background="@drawable/model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                tools:listitem="@layout/item_layout_dospem" />
+        </TableLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/BerRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="30dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/Homeic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/homereg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/PenRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/BerRel"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/Pendaftaranic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="40dp"
+                    android:src="@drawable/scriptt" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DosRel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/PenRel"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/Dospemic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="40dp"
+                    android:src="@drawable/user_bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/statpenni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/statpendaftaran" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

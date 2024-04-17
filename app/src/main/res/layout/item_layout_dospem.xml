@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2,3,3,4,5,6,7">
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/no_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="No"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/nama_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Nama"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/nidn_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="NIDN"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/jk_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="lk/pr"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/keahlian_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Keahlian"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/kuota_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Kuota"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/aksi_tv"
+            android:layout_column="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Aksi"
+            android:textSize="10dp" />
+
+    </TableRow>
+</TableLayout>
